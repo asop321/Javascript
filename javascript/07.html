@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체</title>
+</head>
+
+<body>
+    <script>
+        /* 
+        객체 : Object
+        데이터를 property 라는 인덱싱을 통해 구조적으로 묶어놓은 형태
+        */
+
+        let student1 = {
+            name : "홍길동",
+            age : 28,
+            isFemale :false,
+            address : "Seoul"
+        }
+        console.log(student1["name"]);
+        console.log(student1["age"]);
+        console.log(student1.isFemale);
+        console.log(student1.address);
+
+        student1.address = "Busan";
+        console.log(student1);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배열전용 반복문 forEach, map</title>
+</head>
+
+<body>
+  <script>
+    /* 
+    콜백함수 : 함수호출시 인수로 함수가 들어가는 형태
+    */
+
+    const colors = ["red", "green", "blue"];
+
+    //ES5
+    //반복처리 기능, 유사배열 (DOM 반복가능)
+    colors.forEach((el,index,arr)=>{
+      console.log(el);
+      console.log(index);
+      console.log(arr);
+    });
+
+    //ES6
+    //반복기능외에 추가로 반복도는 배열을 새로운 배열로 복사 , (DOM 반복 불가능)
+    colors.map((el,index,arr)=>{
+      console.log(el);
+      console.log(index);
+      console.log(arr);
+    })
+  </script>
+</body>
+
+</html>

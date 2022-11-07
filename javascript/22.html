@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문자열 내장함수</title>
+</head>
+
+<body>
+  <script>
+    /*
+      문자열.length : 문자열의 길이를 반환
+      문자열.indexOf() : 찾고자 하는 문자열의 위치 반환
+      문자열.slice() :  문자열에서 특정 부분을 추출해서 새로운 문자열로 변환
+      문자열.substr() : 문자열에서 특정 부분을 잘라냄
+      문자열.replace() : 문자열에서 특정 문자값을 바꿔치기
+      문자열.split() : 문자열에서 배열로 변환
+    */
+
+    const txt = "Hello World";
+    console.log(txt.length);
+    console.log(txt.indexOf("apple"));
+    const txt2 = txt.slice(0, 5)
+    console.log(txt2);
+    const txt3 = txt.substr(6, 3)
+    console.log(txt3);
+
+    const origin = "학교종이 땡땡땡 "
+    let result = "";
+    /* 
+        if (origin.length > 15) {
+          result = origin.substr(0, 15) + "..."
+        } else {
+          result = origin
+        }
+    */
+
+    //삼항 연산자 ?앞의 조건식 참이면 ?뒤의 코드가 실행되고, 거짓이면 :뒤의 코드가 실행됨
+    (origin.length > 15) ? result = origin.substr(0, 15) + "..." : result = origin
+    console.log(result)
+
+
+    let introduce = "우리 ABC회사는 높은 품질의 제품을 만들고 있으며 ABC라는 회사 브랜드 가치를 높이기 위해서 노력하고 있습니다. 앞으로 우리 ABC회사 제품을 많이 애용해주세요";
+    const into2 = introduce.replace(/ABC/g, "BBC")
+    //let introduce = "우리 Abc회사는 높은 품질의 제품을 만들고 있으며 Abc라는 회사 브랜드 가치를 높이기 위해서 노력하고 있습니다. 앞으로 우리 Abc회사 제품을 많이 애용해주세요";
+    // const into2 = introduce.replace(/ABC/ig,"BBC") //대소문자 구별 안함
+    console.log(into2);
+
+    const colors = "red,green,blue";  //빈칸도 가능 엄연한 문자열
+    const arr = colors.split(",");
+    console.log(arr)
+
+  </script>
+</body>
+
+</html>

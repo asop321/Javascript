@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>전개 연산자</title>
+</head>
+
+<body>
+  <script>
+    let arr = ["red", "green", "blue"];
+    let arr2 = ["pink", ...arr]; //앞
+    let arr3 = [...arr, "pink"]; //뒤
+    console.log(arr2);
+    console.log(arr3);
+
+    let hobby = ["game", "sports", "reading"];
+    let hobby2 = ["dance", "climbing", "skating"];
+    let newHobby = [...hobby, ...hobby2];
+    console.log(newHobby);
+
+    let defaults = {
+      color: "gray",
+      hobby: "nap",
+      address: "nowhere"
+    };
+    let cutoms = {
+      color: "hotpink",
+      address: "seoul"
+    };
+    let newObj = {...defaults,...cutoms};
+    console.log(newObj);
+  </script>
+</body>
+
+</html>

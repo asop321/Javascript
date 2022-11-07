@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화살표 함수</title>
+</head>
+
+<body>
+    <script>
+        /* 
+         화살표 함수
+         기존의 익명함수를 좀더 쓰기 편하게 축약한 형태
+
+         내부로 전달되는 파라미터가 하나면 괄호는 생략가능
+         코드블록안에서 실행되는 코드가 한줄이면 코드블록 괄호도 생략가능
+        */
+
+        const plus = (num1, num2) => {
+            const result = num1 + num2;
+            return result;
+        }
+        const total = plus(2, 3);
+        console.log(total)
+
+    </script>
+</body>
+
+</html>

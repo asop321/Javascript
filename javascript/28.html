@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date 날짜 관련 객체</title>
+</head>
+
+<body>
+  <script>
+    /* 
+      Math.around(x) :  x값에서 제일 근접한 정수를 반환
+      Math.pow(x,y) : x의 값을 y의 횟수만큼 제곱한 값을 반환
+      Math.sqrt(x) : x의 제곱근 값을 반환
+      Math.abs(x) : x의 양수값을 반환
+      Math.celi(x) : x값에서 소수점 아래 값을 무조건 반올림해서 정수 변환
+      Math.floor(x) : x값에서 소수점 아래값을 무조건 버린 정수 반환
+      Math.min() : 인수로 넣은 값들 중에서 제일 작을 값을 반환
+      Math.max() : 인수로 넣은 값들 중에서 제일 큰 값을 반환
+      Math.random() : 0에서 1사의 실수를 랜덤으로 반환
+      Math.floor(Math.random() * num) : 특정수까지의 랜덤한 정수를 반환
+    */
+
+    console.log(Math.round(2.8)); //3
+    console.log(Math.pow(3,2)); //9
+    console.log(Math.sqrt(25)); //5
+    console.log(Math.abs(-2.3)); //2.3
+    console.log(Math.ceil(2.4)); //3
+    console.log(Math.floor(2.8)); //2
+    console.log(Math.min(1,2,3,4,5)); //1
+    console.log(Math.max(1,2,3,4,5)); //5
+    console.log(Math.random()); // 랜덤으로 0~1사이 숫자 나옴
+    console.log(Math.floor(Math.random() * 10)+1) // 랜덤으로 1~10 사이 숫자 나옴
+  </script>
+</body>
+
+</html>

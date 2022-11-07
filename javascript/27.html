@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date 날짜 관련 객체</title>
+</head>
+
+<body>
+  <script>
+    /*
+      new Date() : 날짜 정보값 반환
+      new Date().getTime() : 1970년 1월 1일 이후부터의 밀리세컨드 단위 숫자 반환 
+      new Date().getFullYear() : 해당 년도를 반환
+      new Date().getMonth() : 해당 월을 반환
+      new Date().getDate() : 현재 일을 반환
+      new Date().getHours() : 현재 시간을 반환
+      new Date().getMinutes() : 현재 분을 반환
+      new Date().getSeconds() : 현재 초를 반환
+    */
+    
+    console.log(new Date());
+    console.log(new Date().getTime());
+    console.log(new Date().getFullYear());
+    const months = ["January","February","March","April","May","June","July","August","October","November","December","September"]
+    console.log(months[new Date().getMonth()]);
+    console.log(new Date().getDate());
+    console.log(new Date().getHours());
+    console.log(new Date().getMinutes());
+    console.log(new Date().getSeconds());
+  </script>
+</body>
+
+</html>

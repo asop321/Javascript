@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문 (if문)</title>
+</head>
+
+<body>
+    <script>
+        /*
+          조건문 : 특정조건을 걸어서 해당 조건의 참, 거짓 유무에 따라 코드의 분기를 생성
+          if(조건식1){
+            조건식1이 참이면 해당코드 블록을 실행
+            거짓이면 해당 코드 블록을 무시하고 다음 조건식으로 넘어감
+          }else if(조건식2){
+            조건식2이 참이면 해당코드 블록을 실행
+            거짓이면 해당 코드 블록을 무시하고 다음 조건식으로 넘어감
+          }else{
+            위의 모든 조건식이 거짓이면 이곳의 코드를 실행하고 종료
+          }
+  
+        */
+
+        function plus(num1, num2) {
+            if (num1 === undefined || num2 === undefined) {
+                console.error("두개의 인수값을 모두 넣어주세요.");
+            }
+            if (typeof num1 !== "number" || typeof num2 !== "number" ){
+                console.error("두개의 인수값을 모두 숫자로 넣어주세요.")
+            }
+
+            const result = num1+num2;
+            console.log(result);
+        };
+        plus(2 ,3);
+    </script>
+</body>
+
+</html>
