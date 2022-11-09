@@ -1,0 +1,26 @@
+@charset "UTF-8";
+body{
+    height: 5000px;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    height: 50px;
+    background: #555;
+    font: bold 14px/50px "arial";
+    color: #fff;
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    border-radius: 40px;
+
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+    background: aqua;
+    margin: 100px;
+}
